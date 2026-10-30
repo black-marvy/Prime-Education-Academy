@@ -1,0 +1,374 @@
+.activities-navbar {
+ background-image: url(../assets/image/cooperate-uniform.jpg);
+ background-size: cover;
+ height: 100vh;
+ margin-bottom: 5%;
+} 
+.activities-navbar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.762);
+}
+.activities-navbar > h2 {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 3rem;
+}
+.activities-navbar > h4 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+.activities-hero-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 8%;
+    gap: 5%;
+    padding:  20px;
+   
+
+}
+.activities-hero-1 > h3 {
+    font-size: 1.2rem;
+    margin-bottom: 4%;
+
+    
+   
+}
+.activities-hero-1 > h3 >h4 {
+    font-size: .9rem;
+    font-weight: normal;
+    line-height: 1.8;
+    margin-bottom: 4%;
+
+}
+.activities-hero-1 > h3  > span {
+margin-top: 10%;
+color: rgba(128, 128, 128, 0.813);
+font-size: .9rem;
+}
+.activities-hero-1 > img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+.activities-hero-2{
+    margin-top: 30%;
+
+}
+.activities-hero-2 > h2 {
+    font-size: 2rem;
+    margin-bottom: 4%;
+    text-align: center;
+
+ }   
+.activities-hero-2 > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    padding: 0 30px;
+    overflow: hidden;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+.activities-hero-2 > div > h2{
+    font-size: 1.2rem;
+    height: 30vh;
+    line-height: 1.3;
+    
+
+}
+.activities-hero-2 h2 svg {
+  margin-right: 10px;
+  height: 4vh;
+}
+.activities-hero-2 > div > h2 > h3 {
+    font-size: .9rem;
+     color: rgba(0, 0, 0, 0.685);
+     text-align: start;
+     width: 100%;
+     margin-top: 4%;
+}
+.activities-hero-4{
+    margin-top: 10%;
+    position: relative;
+    height: 100vh;
+}
+
+.activities-hero-4 > video {
+ width: 100%;
+ z-index: 0;
+ position: absolute;
+ object-fit: cover;
+ height: 100vh;
+
+}
+.activities-hero-4 > h2 {
+    z-index: 2;
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+   
+
+}
+.activities-hero-4 > h3 {
+    z-index: 2;
+    position: relative;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    
+
+}
+.activities-hero-4 > Button {
+    z-index: 2;
+    position: relative;
+    margin-left: 45%;
+    margin-top:2% ;
+    
+
+}
+.activities-hero-4::before{
+    background-color: rgba(0, 0, 0, 0.36);
+    content: " ";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+/* ==========================================
+   TABLET AND MOBILE: 768px AND BELOW
+========================================== */
+
+@media (max-width: 768px) {
+  /* HERO BANNER */
+  .activities-navbar {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 400px;
+    margin-bottom: 40px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .activities-navbar::before {
+    height: 100%;
+    z-index: 0;
+  }
+
+  .activities-navbar > h2 {
+    padding: 0 20px;
+    padding-top: 180px;
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    line-height: 1.3;
+  }
+
+  .activities-navbar > h4 {
+    padding: 15px 20px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* ACADEMIC AND SCHOOL ACTIVITIES */
+  .activities-hero-1 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  .activities-hero-1 > h3 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 10px 0;
+  }
+
+  .activities-hero-1 > h3 > h4 {
+    font-size: 0.95rem;
+    font-weight: normal;
+    line-height: 1.7;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .activities-hero-1 > h3 > span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .activities-hero-1 > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  /* CHILD SAFETY FEATURES */
+  .activities-hero-2 {
+    margin-top: 60px;
+    padding: 0 16px;
+  }
+
+  .activities-hero-2 > h2 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+
+  .activities-hero-2 > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
+    overflow: visible;
+  }
+
+  .activities-hero-2 > div > h2 {
+    height: auto;
+    min-width: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  .activities-hero-2 h2 svg {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .activities-hero-2 > div > h2 > h3 {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  /* VIDEO CALL TO ACTION */
+  .activities-hero-4 {
+    width: 100%;
+    height: 65vh;
+    min-height: 400px;
+    margin-top: 60px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+  }
+
+  .activities-hero-4 > video {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .activities-hero-4 > h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: clamp(1.7rem, 6vw, 2.3rem);
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .activities-hero-4 > h3 {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .activities-hero-4 > button {
+    margin: 10px 0 0;
+    max-width: 100%;
+  }
+}
+
+/* ==========================================
+   SMALL PHONES: 480px AND BELOW
+========================================== */
+
+@media (max-width: 480px) {
+  .activities-navbar {
+    height: 60vh;
+    min-height: 350px;
+  }
+
+  .activities-navbar > h2 {
+    padding-top: 150px;
+    font-size: 1.8rem;
+  }
+
+  .activities-navbar > h4 {
+    font-size: 0.9rem;
+  }
+
+  .activities-hero-1 {
+    padding: 0 16px;
+    gap: 15px;
+  }
+
+  .activities-hero-1 > h3 {
+    font-size: 1.05rem;
+  }
+
+  .activities-hero-1 > h3 > h4 {
+    font-size: 0.9rem;
+  }
+
+  .activities-hero-1 > img {
+    max-height: 280px;
+  }
+
+  .activities-hero-2 > h2 {
+    font-size: 1.45rem;
+  }
+
+  .activities-hero-2 > div {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 0;
+  }
+
+  .activities-hero-2 > div > h2 {
+    font-size: 1rem;
+  }
+
+  .activities-hero-2 > div > h2 > h3 {
+    font-size: 0.9rem;
+  }
+
+  .activities-hero-4 {
+    height: 60vh;
+    min-height: 350px;
+    padding: 25px 16px;
+  }
+
+  .activities-hero-4 > h2 {
+    font-size: 1.65rem;
+  }
+
+  .activities-hero-4 > h3 {
+    font-size: 0.9rem;
+  }
+}

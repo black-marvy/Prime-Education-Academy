@@ -1,0 +1,28 @@
+.btn {
+  border: none;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px 40px;
+  font-weight: normal;
+}
+.black {
+  background-color: rgba(0, 0, 0, 0.637);
+  color: white;
+}
+.black:hover {
+  background-color: rgba(255, 255, 255, 0.575);
+  color: black;
+  padding: 13px 42px;
+}
+.white {
+   background-color: rgba(255, 255, 255, 0.575);
+  color: black;
+}
+.white:hover {
+ background-color: rgba(0, 0, 0, 0.637);
+  color: white;
+  padding: 13px 42px;
+}
+

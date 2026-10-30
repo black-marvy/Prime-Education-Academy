@@ -1,0 +1,572 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.about-screen {
+  background-color: rgb(236, 231, 231);
+}
+
+/* ABOUT PAGE HERO BANNER */
+.about-navbar {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 120px 30px 60px;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/image/About-uss.avif");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-navbar > h3 {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.3;
+  color: white;
+}
+
+.about-navbar > h3 > h5 {
+  margin-top: 15px;
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.about-hero-1 {
+  display: flex;
+  padding: 20px;
+  gap: 10%;
+  margin-top: 5%;
+}
+.about-hero-1 > div {
+  width: 50%;
+}
+.about-hero-1 > div:first-child {
+  width: 40%;
+}
+.about-hero-1 > div > h2 {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.767);
+  margin-top: 10%;
+}
+.about-hero-1 > div > h4 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.767);
+  margin-top: 3%;
+  line-height: 1.2;
+}
+.about-hero-1 > div > img {
+  height: 50vh;
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.about-hero-1 > div > div {
+  display: flex;
+  gap: 2%;
+  width: 80%;
+  margin-top: 5%;
+}
+.about-hero-1 > div > div > img {
+  width: 40%;
+}
+.about-hero-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.558);
+}
+.about-hero-2 > div > h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 3%;
+}
+.about-hero-2 > div > h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  margin-top: 3%;
+  line-height: 1.2;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+.about-hero-2-btn {
+  margin-top: 3%;
+  display: flex;
+  gap: 2%;
+  margin-left: 40%;
+  margin-bottom: 5%;
+}
+.about-hero-2 > div > img {
+  border-radius: 20px;
+}
+.about-hero-3 {
+  padding: 20px;
+  gap: 10%;
+  margin-top: 5%;
+}
+.about-hero-3 > h2 {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.767);
+  margin-top: 3%;
+  text-align: center;
+}
+.about-hero-3 > h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.767);
+  margin-top: 3%;
+  line-height: 1.2;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+
+.about-hero-3-card {
+  display: flex;
+  gap: 5%;
+  margin-top: 5%;
+}
+.about-hero-3-card > div {
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.about-hero-3-card > h2 {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.767);
+  margin-top: 3%;
+  text-align: center;
+}
+.about-hero-3-card > h2 > h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.767);
+  margin-top: 3%;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.about-hero-4 {
+  padding: 20px;
+  gap: 10%;
+  margin-top: 5%;
+}
+.about-hero-4 > h2 {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.767);
+  margin-top: 3%;
+  text-align: center;
+}
+.about-hero-4 > h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.767);
+  margin-top: 3%;
+  line-height: 1.2;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: %;
+}
+.about-hero-4 > div {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 10px;
+  width: 60%;
+  margin-left: 30%;
+}
+
+.about-hero-4 > div > img {
+  height: 50vh;
+  border-radius: 20px;
+  margin-left: 20%;
+}
+.about-hero-4 > div > h3 {
+  margin-left: 17%;
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.511);
+}
+.about-hero-7 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.about-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.about-hero-7 > div {
+  position: relative;
+  z-index: 2;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.4;
+}
+.about-hero-7 > div > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1%;
+}
+.about-hero-7 > div > h5 {
+  font-size: 1.2rem;
+  margin-bottom: 2%;
+}
+.about-hero-7::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* =========================================
+   TABLET AND MOBILE: 768px AND BELOW
+========================================= */
+
+@media (max-width: 768px) {
+  .about-screen {
+    width: 100%;
+    overflow-x: clip;
+  }
+
+  /* ABOUT PAGE BANNER */
+
+  /* ABOUT PAGE BANNER — TABLET AND MOBILE */
+  .about-navbar {
+    width: 100%;
+    min-height: 400px;
+    height: 65vh;
+    padding: 110px 20px 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+  }
+
+  .about-navbar > h3 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    line-height: 1.3;
+  }
+
+  .about-navbar > h3 > h5 {
+    margin: 15px 0 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: normal;
+  }
+
+  /* SECTION 1: OUR COMMITMENT */
+  .about-hero-1 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .about-hero-1 > div,
+  .about-hero-1 > div:first-child {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-hero-1 > div > h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-top: 0;
+  }
+
+  .about-hero-1 > div > h4 {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .about-hero-1 > div > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .about-hero-1 > div > div {
+    width: 100%;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .about-hero-1 > div > div > img {
+    width: calc((100% - 20px) / 3);
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* SECTION 2: BUILDING BRIGHT MINDS */
+  .about-hero-2 {
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+
+  .about-hero-2 > div {
+    width: 100%;
+  }
+
+  .about-hero-2 > div > h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .about-hero-2 > div > h4 {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .about-hero-2-btn {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0;
+  }
+
+  .about-hero-2 > div > img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* SECTION 3: WHAT WE BELIEVE */
+  .about-hero-3 {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .about-hero-3 > h2 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+    margin-top: 0;
+  }
+
+  .about-hero-3 > h4 {
+    width: 100%;
+    margin: 20px 0 30px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .about-hero-3-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+  }
+
+  .about-hero-3-card > h2 {
+    width: 100%;
+    margin: 0;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 3px 8px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .about-hero-3-card > h2 > h3 {
+    font-size: 0.95rem;
+    font-weight: normal;
+    line-height: 1.7;
+    margin-top: 12px;
+  }
+
+  /* SECTION 4: THE TEAM */
+  .about-hero-4 {
+    padding: 20px;
+    margin-top: 30px;
+    
+  }
+
+  .about-hero-4 > h2 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+  }
+
+  .about-hero-4 > h4 {
+    width: 100%;
+    margin: 20px 0 30px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .about-hero-4 > div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0;
+    height: 30vh;
+    
+  }
+
+  .about-hero-4 > div > img {
+    height: 220px;
+    margin-left: 30%;
+    border-radius: 12px;
+  }
+  .about-hero-4> div > h3 {
+    margin-bottom: 40%;
+  }
+
+  /* SECTION 7: VIDEO CALL TO ACTION */
+  .about-hero-7 {
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    margin-top: 40px;
+  }
+
+  .about-video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-hero-7 > div {
+    padding: 25px 16px;
+  }
+
+  .about-hero-7 > div > h2 {
+    font-size: clamp(1.7rem, 6vw, 2.3rem);
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  .about-hero-7 > div > h5 {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+}
+
+/* =========================================
+   SMALL PHONES: 480px AND BELOW
+========================================= */
+
+@media (max-width: 480px) {
+  @media (max-width: 480px) {
+    .about-navbar {
+      height: 55vh;
+      min-height: 350px;
+      padding: 100px 15px 25px;
+    }
+
+    .about-navbar > h3 {
+      font-size: 1.7rem;
+    }
+
+    .about-navbar > h3 > h5 {
+      font-size: 0.9rem;
+    }
+  }
+
+  .about-hero-1,
+  .about-hero-3,
+  .about-hero-4 {
+    padding: 16px;
+  }
+
+  .about-hero-1 > div > h2 {
+    font-size: 1.3rem;
+  }
+
+  .about-hero-1 > div > h4,
+  .about-hero-2 > div > h4,
+  .about-hero-3 > h4,
+  .about-hero-4 > h4 {
+    font-size: 0.9rem;
+  }
+
+  .about-hero-1 > div > div > img {
+    height: 85px;
+  }
+
+  .about-hero-2 {
+    padding: 35px 16px;
+  }
+
+  .about-hero-2 > div > h2 {
+    font-size: 1.7rem;
+  }
+
+  .about-hero-3 > h2,
+  .about-hero-4 > h2 {
+    font-size: 1.45rem;
+  }
+
+  .about-hero-3-card > h2 {
+    padding: 20px 15px;
+    font-size: 1rem;
+  }
+
+  .about-hero-4 > div {
+    gap: 12px;
+  }
+
+  .about-hero-4 > div > img {
+    height: 180px;
+  }
+
+  .about-hero-7 {
+    height: 55vh;
+    min-height: 350px;
+  }
+
+  .about-hero-7 > div > h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-hero-7 > div > h5 {
+    font-size: 0.9rem;
+  }
+}

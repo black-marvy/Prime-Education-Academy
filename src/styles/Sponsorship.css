@@ -1,0 +1,1111 @@
+* {
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: #f7f8f5;
+color: #17231b;
+}
+
+button,
+select,
+input {
+font: inherit;
+}
+
+button {
+cursor: pointer;
+}
+
+/* =========================
+HERO
+========================= */
+
+.s-hero1 {
+min-height: 150vh;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+background-image: url("../assets/image/black-photos.jpg");
+background-size: cover;
+background-position: center;
+}
+
+.hero-overlay {
+position: absolute;
+inset: 0;
+background:
+linear-gradient(
+90deg,
+rgba(0, 0, 0, 0.82) 0%,
+rgba(0, 0, 0, 0.55) 45%,
+rgba(0, 0, 0, 0.25) 100%
+);
+}
+
+.hero-content {
+width: min(1100px, 90%);
+position: relative;
+z-index: 2;
+color: white;
+}
+
+.hero-label {
+display: inline-block;
+margin-top: 15%;
+padding: 8px 15px;
+border: 1px solid rgba(255, 255, 255, 0.45);
+border-radius: 100px;
+font-size: 12px;
+letter-spacing: 3px;
+font-weight: 700;
+}
+
+.hero-content h1 {
+max-width: 850px;
+margin: 0;
+font-size: clamp(4rem, 9vw, 8rem);
+line-height: 0.9;
+text-transform: uppercase;
+letter-spacing: -5px;
+}
+
+.hero-content h1 span {
+display: block;
+color: #a7d46f;
+/* height: 20vh; */
+}
+
+.hero-content p {
+max-width: 570px;
+margin: 30px 0;
+font-size: 19px;
+line-height: 1.7;
+color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-button {
+display: inline-flex;
+align-items: center;
+padding: 15px 28px;
+border-radius: 50px;
+background: #a7d46f;
+color: #142016;
+text-decoration: none;
+font-weight: 800;
+transition: 0.3s ease;
+}
+
+.hero-button:hover {
+transform: translateY(-4px);
+background: white;
+}
+
+.hero-scroll {
+position: absolute;
+z-index: 3;
+bottom: 30px;
+left: 50%;
+transform: translateX(-50%);
+color: white;
+font-size: 11px;
+letter-spacing: 2px;
+text-transform: uppercase;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+.hero-scroll span {
+width: 1px;
+height: 35px;
+background: white;
+}
+
+/* =========================
+INTRO
+========================= */
+
+.donation-intro {
+width: min(1150px, 90%);
+margin: auto;
+padding: 110px 0 80px;
+
+display: grid;
+grid-template-columns: 1.1fr 0.9fr;
+gap: 80px;
+align-items: end;
+}
+
+.section-tag {
+color: #56802c;
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.donation-intro h2 {
+margin: 15px 0 0;
+font-size: clamp(2.5rem, 5vw, 4.8rem);
+line-height: 1;
+letter-spacing: -3px;
+/* height: 35vh;
+overflow: hidden; */
+}
+
+.donation-intro h2 span {
+color: #56802c;
+}
+
+.donation-intro > p {
+margin: 0;
+font-size: 17px;
+line-height: 1.8;
+color: #647067;
+}
+
+/* =========================
+SHOP
+========================= */
+
+.donation-shop {
+width: min(1250px, 92%);
+margin: auto;
+padding-bottom: 110px;
+}
+
+.shop-header,
+.cart-header {
+display: flex;
+justify-content: space-between;
+align-items: end;
+margin-bottom: 35px;
+}
+
+.shop-header h2,
+.cart-header h2 {
+margin: 8px 0 0;
+font-size: 32px;
+letter-spacing: -1px;
+}
+
+.sort-wrapper {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.sort-wrapper label {
+font-size: 13px;
+color: #69736c;
+}
+
+.sort-wrapper select {
+border: 1px solid #d9dfd8;
+border-radius: 8px;
+padding: 12px 35px 12px 14px;
+background: white;
+color: #17231b;
+outline: none;
+}
+
+/* =========================
+CARDS
+========================= */
+
+.donation-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 22px;
+}
+
+.donation-card {
+overflow: hidden;
+background: white;
+border: 1px solid #e4e8e2;
+border-radius: 18px;
+transition:
+transform 0.35s ease,
+box-shadow 0.35s ease;
+}
+
+.donation-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 20px 50px rgba(22, 42, 25, 0.12);
+}
+
+.image-wrapper {
+height: 250px;
+position: relative;
+overflow: hidden;
+background: #e9eee8;
+}
+
+.donation-image {
+width: 100%;
+height: 100%;
+display: block;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+
+.donation-card:hover .donation-image {
+transform: scale(1.06);
+}
+
+.impact-badge {
+position: absolute;
+top: 15px;
+left: 15px;
+padding: 7px 10px;
+border-radius: 50px;
+background: rgba(255, 255, 255, 0.9);
+backdrop-filter: blur(8px);
+font-size: 10px;
+font-weight: 800;
+color: #416225;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.donation-info {
+position: relative;
+padding: 22px;
+}
+
+.item-number {
+position: absolute;
+top: 20px;
+right: 20px;
+color: #c3c9c2;
+font-size: 11px;
+font-weight: 800;
+}
+
+.donation-info h3 {
+margin: 0 0 9px;
+font-size: 19px;
+}
+
+.price {
+margin: 0 0 18px;
+color: #56802c;
+font-size: 20px;
+font-weight: 800;
+}
+
+.donation-button {
+width: 100%;
+border: 1px solid #d6ddd3;
+padding: 12px;
+border-radius: 9px;
+background: white;
+color: #31402f;
+font-weight: 700;
+transition: 0.25s ease;
+}
+
+.donation-button:hover,
+.donation-button.selected {
+border-color: #56802c;
+background: #56802c;
+color: white;
+}
+
+/* =========================
+CUSTOM DONATION
+========================= */
+
+.custom-donation {
+background: #17231b;
+color: white;
+padding: 100px 20px;
+}
+
+.custom-content {
+width: min(800px, 100%);
+margin: auto;
+text-align: center;
+}
+
+.custom-content .section-tag {
+color: #a7d46f;
+}
+
+.custom-content h2 {
+margin: 15px 0;
+font-size: clamp(2.5rem, 6vw, 4.5rem);
+letter-spacing: -3px;
+}
+
+.custom-content p {
+max-width: 600px;
+margin: 0 auto 35px;
+color: rgba(255, 255, 255, 0.65);
+line-height: 1.7;
+}
+
+.amount-box {
+max-width: 650px;
+margin: auto;
+display: flex;
+align-items: center;
+padding: 8px;
+background: white;
+border-radius: 14px;
+}
+
+.amount-box > span {
+padding-left: 15px;
+color: #56802c;
+font-size: 22px;
+font-weight: 800;
+}
+
+.amount-box input {
+flex: 1;
+min-width: 0;
+border: none;
+outline: none;
+padding: 15px;
+font-size: 18px;
+}
+
+.amount-box button {
+border: none;
+padding: 15px 22px;
+border-radius: 9px;
+background: #a7d46f;
+color: #142016;
+font-weight: 800;
+}
+
+.quick-amounts {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin-top: 20px;
+flex-wrap: wrap;
+}
+
+.quick-amounts button {
+border: 1px solid rgba(255, 255, 255, 0.2);
+padding: 10px 17px;
+border-radius: 50px;
+background: transparent;
+color: white;
+transition: 0.25s ease;
+}
+
+.quick-amounts button:hover {
+background: white;
+color: #17231b;
+}
+
+/* =========================
+CART
+========================= */
+
+.cart-section {
+width: min(1150px, 90%);
+margin: auto;
+padding: 100px 0;
+}
+
+.cart-count {
+padding: 9px 15px;
+border-radius: 50px;
+background: #e7eee3;
+color: #56802c;
+font-size: 13px;
+font-weight: 800;
+}
+
+.empty-cart {
+padding: 70px 20px;
+text-align: center;
+border: 1px dashed #ccd4c9;
+border-radius: 18px;
+}
+
+.empty-icon {
+font-size: 50px;
+color: #56802c;
+}
+
+.empty-cart h3 {
+margin-bottom: 5px;
+}
+
+.empty-cart p {
+color: #747d76;
+}
+
+.cart-content {
+display: grid;
+grid-template-columns: 1.4fr 0.6fr;
+gap: 35px;
+align-items: start;
+}
+
+.cart-items {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.cart-item {
+display: grid;
+grid-template-columns: 1fr auto auto;
+gap: 20px;
+align-items: center;
+padding: 20px;
+border: 1px solid #e0e5de;
+border-radius: 13px;
+background: white;
+}
+
+.cart-item span {
+font-size: 9px;
+color: #789069;
+font-weight: 800;
+letter-spacing: 1.5px;
+}
+
+.cart-item h3 {
+margin: 6px 0 0;
+font-size: 16px;
+}
+
+.cart-item strong {
+color: #56802c;
+}
+
+.remove-button {
+border: none;
+background: transparent;
+color: #b54b4b;
+font-size: 12px;
+}
+
+.cart-summary {
+padding: 30px;
+border-radius: 18px;
+background: #17231b;
+color: white;
+}
+
+.cart-summary > span {
+color: rgba(255, 255, 255, 0.6);
+font-size: 13px;
+}
+
+.cart-summary h2 {
+margin: 10px 0 25px;
+font-size: 38px;
+}
+
+.checkout-button {
+width: 100%;
+border: none;
+padding: 15px;
+border-radius: 9px;
+background: #a7d46f;
+color: #17231b;
+font-weight: 800;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.checkout-button span {
+font-size: 20px;
+}
+
+.cart-summary p {
+margin: 20px 0 0;
+color: rgba(255, 255, 255, 0.55);
+font-size: 12px;
+line-height: 1.6;
+}
+
+/* EMAIL FIELD */
+
+.email-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.email-field label {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.email-field input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #17231b;
+  font-size: 14px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.email-field input::placeholder {
+  color: #929a93;
+}
+
+.email-field input:focus {
+  border-color: #a7d46f;
+  box-shadow: 0 0 0 3px rgba(167, 212, 111, 0.2);
+}
+
+.email-field input:invalid:not(:placeholder-shown) {
+  border-color: #e57373;
+}
+
+
+
+/* =========================================
+   RESPONSIVE — TABLETS & SMALL LAPTOPS
+========================================= */
+
+@media (max-width: 1050px) {
+  .s-hero1 {
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    width: 88%;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(3.5rem, 8vw, 6.5rem);
+    letter-spacing: -3px;
+  }
+
+  .hero-content h1 span {
+    height: auto;
+  }
+
+  .donation-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .donation-intro {
+    gap: 40px;
+  }
+
+  .donation-intro h2 {
+    height: auto;
+  }
+
+  .cart-content {
+    grid-template-columns: minmax(0, 1.4fr) minmax(250px, 0.8fr);
+    gap: 22px;
+  }
+
+  .cart-item {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+
+  .remove-button {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE — TABLETS
+========================================= */
+
+@media (max-width: 800px) {
+  .s-hero1 {
+    min-height: 85vh;
+    background-position: center;
+  }
+
+  .hero-content {
+    width: 88%;
+  }
+
+  .hero-label {
+    margin-top: 0;
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(3.2rem, 9vw, 5.5rem);
+    line-height: 0.98;
+    letter-spacing: -2px;
+  }
+
+  .hero-content h1 span {
+    height: auto;
+  }
+
+  .hero-content p {
+    max-width: 520px;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .donation-intro {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 75px 0 55px;
+  }
+
+  .donation-intro h2 {
+    font-size: clamp(2.4rem, 6vw, 3.8rem);
+    height: auto;
+    line-height: 1.05;
+    letter-spacing: -2px;
+  }
+
+  .donation-intro > p {
+    font-size: 16px;
+  }
+
+  .donation-shop {
+    padding-bottom: 75px;
+  }
+
+  .donation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .shop-header,
+  .cart-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .sort-wrapper {
+    width: 100%;
+  }
+
+  .sort-wrapper select {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .custom-donation {
+    padding: 75px 20px;
+  }
+
+  .custom-content h2 {
+    font-size: clamp(2.3rem, 6vw, 3.5rem);
+    letter-spacing: -2px;
+  }
+
+  .cart-section {
+    padding: 70px 0;
+  }
+
+  .cart-content {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-summary {
+    width: 100%;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE — MOBILE PHONES
+========================================= */
+
+@media (max-width: 550px) {
+  .s-hero1 {
+    min-height: 75vh;
+    padding: 100px 0 90px;
+    background-position: center;
+  }
+
+  .hero-content {
+    width: 88%;
+  }
+
+  .hero-label {
+    display: inline-block;
+    margin-bottom: 22px;
+    padding: 7px 11px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.8rem, 12vw, 4.5rem);
+    line-height: 0.98;
+    letter-spacing: -2px;
+  }
+
+  .hero-content h1 span {
+    height: auto;
+  }
+
+  .hero-content p {
+    margin: 22px 0;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .hero-button {
+    padding: 13px 22px;
+    font-size: 14px;
+  }
+
+  .hero-scroll {
+    bottom: 18px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-scroll span {
+    height: 25px;
+  }
+
+  .donation-intro {
+    width: 88%;
+    padding: 55px 0 45px;
+    gap: 18px;
+  }
+
+  .section-tag {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .donation-intro h2 {
+    margin-top: 12px;
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+  }
+
+  .donation-intro > p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .donation-shop {
+    width: 90%;
+    padding-bottom: 55px;
+  }
+
+  .shop-header,
+  .cart-header {
+    margin-bottom: 25px;
+    gap: 15px;
+  }
+
+  .shop-header h2,
+  .cart-header h2 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .sort-wrapper {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sort-wrapper label {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .sort-wrapper select {
+    padding: 11px 10px;
+    font-size: 13px;
+  }
+
+  .donation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .donation-card {
+    min-width: 0;
+    border-radius: 12px;
+  }
+
+  .donation-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .image-wrapper {
+    height: 155px;
+  }
+
+  .impact-badge {
+    top: 8px;
+    left: 8px;
+    padding: 5px 7px;
+    font-size: 8px;
+    letter-spacing: 0.4px;
+  }
+
+  .donation-info {
+    padding: 12px;
+  }
+
+  .item-number {
+    top: 12px;
+    right: 10px;
+    font-size: 9px;
+  }
+
+  .donation-info h3 {
+    padding-right: 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .price {
+    margin-bottom: 13px;
+    font-size: 16px;
+  }
+
+  .donation-button {
+    padding: 10px 5px;
+    font-size: 12px;
+    border-radius: 7px;
+  }
+
+  .custom-donation {
+    padding: 60px 6%;
+  }
+
+  .custom-content h2 {
+    font-size: clamp(2rem, 8.5vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+  }
+
+  .custom-content p {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .amount-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 7px;
+    border-radius: 11px;
+  }
+
+  .amount-box > span {
+    padding-left: 10px;
+    font-size: 19px;
+  }
+
+  .amount-box input {
+    flex: 1;
+    width: 0;
+    min-width: 0;
+    padding: 13px 8px;
+    font-size: 16px;
+  }
+
+  .amount-box button {
+    width: 100%;
+    margin-top: 7px;
+    padding: 13px;
+    font-size: 14px;
+  }
+
+  .quick-amounts {
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .quick-amounts button {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+
+  .cart-section {
+    width: 90%;
+    padding: 55px 0;
+  }
+
+  .cart-count {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .empty-cart {
+    padding: 45px 15px;
+  }
+
+  .empty-icon {
+    font-size: 42px;
+  }
+
+  .empty-cart h3 {
+    font-size: 17px;
+  }
+
+  .empty-cart p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .cart-content {
+    gap: 20px;
+  }
+
+  .cart-item {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    padding: 15px 12px;
+    border-radius: 10px;
+  }
+
+  .cart-item h3 {
+    font-size: 14px;
+    overflow-wrap: anywhere;
+  }
+
+  .cart-item strong {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .remove-button {
+    grid-column: 1 / -1;
+    justify-self: start;
+    padding: 5px 0;
+  }
+
+  .cart-summary {
+    padding: 22px 18px;
+    border-radius: 13px;
+  }
+
+  .cart-summary h2 {
+    font-size: 30px;
+  }
+
+  .checkout-button {
+    padding: 14px;
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .checkout-button span {
+    font-size: 18px;
+  }
+
+  .cart-summary p {
+    font-size: 11px;
+  }
+  
+.email-field {
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.email-field label {
+  font-size: 12px;
+}
+
+.email-field input {
+  padding: 13px 12px;
+  font-size: 14px;
+}
+
+}
+
+
+/* =========================================
+   RESPONSIVE — VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+  .hero-content h1 {
+    font-size: 2.6rem;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .donation-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .image-wrapper {
+    height: 220px;
+  }
+
+  .donation-info {
+    padding: 16px;
+  }
+
+  .donation-info h3 {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .donation-button {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .custom-content h2 {
+    font-size: 2rem;
+  }
+
+  .quick-amounts {
+    gap: 7px;
+  }
+
+  .quick-amounts button {
+    padding: 9px 10px;
+    font-size: 11px;
+  }
+
+  .cart-item {
+    padding: 13px 10px;
+  }
+
+  .cart-summary {
+    padding: 20px 15px;
+  }
+}

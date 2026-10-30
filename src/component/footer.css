@@ -1,0 +1,190 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 2% 5%;
+  gap: 2%;
+}
+
+footer > div {
+  padding-top: 14%;
+  
+ 
+}
+footer > h6 {
+  display: none;
+}
+
+footer > div > div {
+  display: flex;
+  gap: 2%;
+  
+  
+}
+footer > div > div > img {
+  height: 12vh;
+
+
+}
+footer > div > div > h3 {
+  font-weight: bold;
+  margin-top: 5%;
+  font-size: 1.1rem;
+  width: 80%;
+}
+footer > div > h5 {
+  margin-left: 20%;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+footer > div > h6 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-left: 20%;
+  color: #80808091;
+}
+footer > div > h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+footer > div > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+footer > div > ul > li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: normal;
+  
+}
+footer > div > ul > li:hover {
+  text-decoration: underline;
+}
+footer > div > ul > li > a {
+  margin-right: 10px;
+  color: white;
+  display: flex;
+  text-decoration: none;
+  gap: 2%;
+  
+
+}
+footer > div > ul > li > a >  {
+  margin-left: 20%;
+}
+
+
+/* ============================
+   TABLETS: 768px AND BELOW
+============================ */
+
+@media (max-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px 20px;
+    padding: 40px 25px;
+  }
+
+  footer > div {
+    padding-top: 0;
+    min-width: 0;
+  }
+
+  /* Academy branding */
+  footer > div:first-child {
+    grid-column: 1 / -1;
+  }
+
+  footer > div > div {
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer > div > div > img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  footer > div > div > h3 {
+    width: auto;
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+
+  footer > div > h5 {
+    margin: 12px 0;
+    font-size: 0.95rem;
+  }
+
+  footer > div > h6 {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  footer > div > h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  footer > div > ul > li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  /* Hide the duplicate copyright at the bottom */
+  footer > h6 {
+    display: none;
+  }
+}
+
+/* ============================
+   PHONES: 480px AND BELOW
+============================ */
+
+@media (max-width: 480px) {
+  footer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 35px 20px;
+  }
+
+  footer > div:first-child {
+    grid-column: auto;
+  }
+
+  footer > div > div > img {
+    height: 55px;
+  }
+
+  footer > div > div > h3 {
+    font-size: 1rem;
+  }
+
+  footer > div > h5 {
+    font-size: 0.9rem;
+  }
+
+  footer > div > h4 {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+  }
+
+  footer > div > ul > li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  footer > div > h6 {
+    font-size: 0.75rem;
+  }
+}

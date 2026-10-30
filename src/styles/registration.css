@@ -1,0 +1,648 @@
+/* =========================================
+   REGISTRATION PAGE
+========================================= */
+
+.registration-page {
+  width: 100%;
+  overflow: hidden;
+  background: #f7f7f4;
+  color: #111;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.reg-nav {
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
+    url("../assets/image/black-photos.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 140px 8% 100px;
+}
+
+.reg-nav::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 75% 30%,
+      rgba(255, 255, 255, 0.12),
+      transparent 35%
+    );
+
+  pointer-events: none;
+}
+
+.reg-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.reg-hero-content h1 {
+  margin: 0;
+  color: white;
+  font-size: clamp(4rem, 9vw, 8rem);
+  line-height: 0.86;
+  letter-spacing: -5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  height: 40vh;
+}
+
+.reg-hero-content p {
+  margin-top: 35px;
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+/* =========================================
+   FORM SECTION
+========================================= */
+
+.reg-form-section {
+  padding: 120px 7%;
+  background: #f7f7f4;
+}
+
+.reg-form {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  background: #fff;
+  padding: 70px;
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================
+   FORM HEADING
+========================================= */
+
+.form-heading {
+  max-width: 850px;
+  margin-bottom: 65px;
+}
+
+.form-heading h2 {
+  margin: 0 0 25px;
+
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: -1.5px;
+
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.form-heading p {
+  margin: 0 0 18px;
+
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* =========================================
+   FORM LAYOUT
+========================================= */
+
+.reg-form form {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+
+  color: #111;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.form-group input {
+  width: 100%;
+
+  padding: 17px 18px;
+
+  border: 1px solid #ddd;
+  border-radius: 2px;
+
+  background: #fafafa;
+
+  color: #111;
+
+  font-size: 1rem;
+
+  outline: none;
+
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease,  
+    box-shadow 0.25s ease;
+}
+
+/* Chrome, Edge, Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.form-group input:focus {
+  border-color: #111;
+  background: #fff;
+
+  box-shadow:
+    0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================
+   SUBMIT
+========================================= */
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.submit-container {
+  grid-column: 1 / -1;
+  margin-top: 15px;
+}
+
+.registration-submit {
+  display: inline-block;
+  min-width: 220px;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 3px;
+  background: #111;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.registration-submit:hover {
+  background: #56802c;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   CALL AND EMAIL BUTTONS
+========================================= */
+
+.admission-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.admission-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  padding: 14px 22px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.call-btn {
+  background: #fff;
+  color: #111;
+}
+
+.call-btn:hover {
+  background: #56802c;
+  border-color: #56802c;
+  color: #fff;
+}
+
+.email-btn {
+  background: transparent;
+  color: #fff;
+}
+
+.email-btn:hover {
+  background: #fff;
+  color: #111;
+}
+
+/* Mobile buttons */
+
+@media (max-width: 650px) {
+  .registration-submit {
+    width: 100%;
+  }
+
+  .admission-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .admission-btn {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   ADMISSION SECTION
+========================================= */
+
+.admission-section {
+  min-height: 650px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  background: #111;
+  color: white;
+}
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.admission-video {
+  min-height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.admission-video iframe {
+  width: 100%;
+
+
+  min-height: 600px;
+
+  border: none;
+
+  display: block;
+}
+
+/* =========================================
+   ADMISSION CONTENT
+========================================= */
+
+.admission-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 80px 9%;
+
+  background: #111;
+}
+
+.admission-content h2 {
+  margin: 0 0 30px;
+
+  max-width: 550px;
+
+  font-size: clamp(2.2rem, 4vw, 4rem);
+
+  line-height: 0.95;
+  letter-spacing: -2px;
+
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.admission-content p {
+  max-width: 550px;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  margin: 0 0 18px;
+}
+
+/* =========================================
+   ADMISSION BUTTONS
+========================================= */
+
+.admission-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 25px;
+
+  flex-wrap: wrap;
+}
+
+.admission-buttons button {
+  min-width: 140px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+
+/* =========================================
+   RESPONSIVE FIXES — TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+  .registration-page {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .reg-nav {
+    min-height: 60vh;
+    padding: 130px 6% 70px;
+    background-position: center;
+  }
+
+  .reg-hero-content {
+    width: 100%;
+  }
+
+  .reg-hero-content h1 {
+    height: auto;
+    font-size: clamp(3.5rem, 9vw, 6rem);
+    line-height: 0.95;
+    letter-spacing: -3px;
+  }
+
+  .reg-hero-content p {
+    max-width: 100%;
+    margin-top: 25px;
+  }
+
+  .reg-form-section {
+    padding: 70px 5%;
+  }
+
+  .reg-form {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 45px 35px;
+  }
+
+  .reg-form form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 22px;
+    row-gap: 25px;
+  }
+
+  .form-group {
+    min-width: 0;
+  }
+
+  .form-group input {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .admission-section {
+    grid-template-columns: 1fr;
+  }
+
+  .admission-video {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .admission-video iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+  }
+
+  .admission-content {
+    padding: 60px 7%;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE FIXES — MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .reg-nav {
+    min-height: 55vh;
+    padding: 110px 6% 55px;
+    box-sizing: border-box;
+  }
+
+  .reg-hero-content h1 {
+    height: auto;
+    font-size: clamp(2.8rem, 13vw, 4.5rem);
+    line-height: 0.98;
+    letter-spacing: -2px;
+  }
+
+  .reg-hero-content p {
+    margin-top: 22px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .reg-form-section {
+    padding: 45px 5%;
+  }
+
+  .reg-form {
+    padding: 30px 20px;
+    border-radius: 6px;
+  }
+
+  .form-heading {
+    margin-bottom: 35px;
+  }
+
+  .form-heading h2 {
+    font-size: clamp(1.65rem, 7vw, 2.2rem);
+    line-height: 1.1;
+    letter-spacing: -0.7px;
+  }
+
+  .form-heading p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .reg-form form {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .form-group label {
+    font-size: 0.78rem;
+    margin-bottom: 8px;
+  }
+
+  .form-group input {
+    width: 100%;
+    min-height: 48px;
+    padding: 14px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .submit-container {
+    grid-column: 1 / -1;
+    margin-top: 5px;
+  }
+
+  .submit-container button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .admission-video {
+    aspect-ratio: 16 / 9;
+    min-height: 0;
+  }
+
+  .admission-video iframe {
+    min-height: 0;
+  }
+
+  .admission-content {
+    padding: 45px 6%;
+  }
+
+  .admission-content h2 {
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.8px;
+    margin-bottom: 22px;
+  }
+
+  .admission-content p {
+    font-size: 0.93rem;
+    line-height: 1.7;
+  }
+
+  .admission-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .admission-buttons button {
+    width: 100%;
+    min-width: 0;
+  }
+  
+  .registration-submit {
+    width: 100%;
+  }
+
+  .admission-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .admission-btn {
+    width: 100%;
+  }
+}
+
+
+
+/* =========================================
+   RESPONSIVE FIXES — SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+  .reg-nav {
+    min-height: 50vh;
+    padding: 100px 5% 45px;
+  }
+
+  .reg-hero-content h1 {
+    font-size: 2.7rem;
+    letter-spacing: -1.5px;
+  }
+
+  .reg-hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .reg-form-section {
+    padding: 35px 4%;
+  }
+
+  .reg-form {
+    padding: 25px 16px;
+  }
+
+  .form-heading h2 {
+    font-size: 1.6rem;
+  }
+
+  .form-heading p {
+    font-size: 0.88rem;
+  }
+
+  .form-group input {
+    padding: 13px 11px;
+  }
+
+  .admission-content {
+    padding: 35px 5%;
+  }
+
+  .admission-content h2 {
+    font-size: 1.9rem;
+  }
+}
