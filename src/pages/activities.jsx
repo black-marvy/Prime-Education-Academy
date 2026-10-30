@@ -4,7 +4,7 @@ import Button from "../props/Button";
 import "../styles/activities.css";
 import { FaCheck } from "react-icons/fa6";
 import baby from "../assets/image/bqby.mp4";
-import Footer from "../component/Footer";
+import Footer from "../component/footer";
 import excellence from "../assets/image/excellence.png";
 import worship from "../assets/image/worship.png";
 import race from "../assets/image/race-stdt.jpg";

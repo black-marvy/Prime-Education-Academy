@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../assets/image/BMTlogo.png";
+import logo from "../assets/image/BMTLogo.png";
 import "./nav.css";
 import { cartContext } from "../context/CartContext";
 import { GiHamburgerMenu } from "react-icons/gi";

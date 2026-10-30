@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../component/navbar";
-import Footer from "../component/Footer"
+import Footer from "../component/footer"
 import EntranceVideo from "../assets/image/SchEntrance.mp4";
 import "../styles/Home.css";
 import Button from "../props/Button";

@@ -4,7 +4,7 @@ import "../styles/Sponsorship.css";
 import { cartContext } from "../context/CartContext";
 import { useLocation, useNavigate } from "react-router-dom";
 import Modal from "../component/modal";
-import Footer from "../component/Footer";
+import Footer from "../component/footer";
 
 const Donation = () => {
   const [amount, setAmount] = useState("");

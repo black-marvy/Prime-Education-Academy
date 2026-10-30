@@ -3,7 +3,7 @@ import Navbar from "../component/navbar";
 import "../styles/about.css";
 import Button from "../props/Button";
 import { FaHeart } from "react-icons/fa";
-import Footer from "../component/Footer";
+import Footer from "../component/footer";
 import cooperate from  "../assets/image/cooperate-uniform.jpg"
 import about from "../assets/image/about-us.jpg"
 import reading from "../assets/image/reading-child.jpg"
