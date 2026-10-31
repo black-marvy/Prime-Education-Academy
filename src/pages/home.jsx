@@ -238,9 +238,6 @@ const Home = () => {
             MAY 2026
           </h3>
         </div>
-        <br />
-        <br />
-        <br />
         <Button text= "Register"  hover = "black" to ="/registration"/>
       </section>
 
