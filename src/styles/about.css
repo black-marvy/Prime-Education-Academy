@@ -21,7 +21,7 @@
 
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/image/About-us.jpg");
+    url("../assets/image/about-us.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;
