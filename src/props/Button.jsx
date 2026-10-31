@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./button.css"
-const Button = ({text, hover, to}) => {
+const Button = ({text, hover, to, href}) => {
   return  href ? (  
     <a href= {href} className= {`btn ${hover}`}>{text}</a>
     ) :(
